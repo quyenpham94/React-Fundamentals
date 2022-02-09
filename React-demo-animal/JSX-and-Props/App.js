@@ -20,7 +20,7 @@ const App = () => (
       <Bouncer age={19} />
       <Bouncer age={11} />
       <Bouncer age={39} />
-  
+      <TodoList todos={['walk chickens', 'feed chickens', 'eat chickens']} />
     </div>
   )
   
