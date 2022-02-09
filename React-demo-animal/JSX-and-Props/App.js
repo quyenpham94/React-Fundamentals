@@ -1,19 +1,29 @@
-const App = () => {
+const App = () => (
     <div>
-        <Animal
-            name="Stevie Chicks"
-            species="Silkie Chicken"
-            emoji="🐔"
-            isCute={true}
-        />
-        <Animal name="Patrick" species="Red Fox" emoji="🦊" isCute={false} />
-        
-        <Bouncer age={19} />
-        <Bouncer age={17} />
-        <Bouncer age={32} />
-
+      <Alert>
+        <h1>HELLO!!!!</h1>
+      </Alert>
+      <RandomChoice choices={['red', 'green', 'yellow']} />
+      <RandomNumRange min={20} max={30} />
+      <RandomNumRange />
+  
+      <Animal
+        name="Stevie Chicks"
+        species="Silkie Chicken"
+        emoji="🐔"
+        isCute
+      />
+      <Animal name="Patrick" species="Red Fox" emoji="🦊" />
+      <RandomNum />
+      <RandomNum />
+      <RandomNum />
+      <Bouncer age={19} />
+      <Bouncer age={11} />
+      <Bouncer age={39} />
+  
     </div>
-}
-
-
-ReactDOM.render(<App />, document.getElementById("root"))
+  )
+  
+  
+  
+  ReactDOM.render(<App />, document.getElementById("root"))
