@@ -1,11 +1,12 @@
 import React from "react";
+import "./CartItem.css";
 
 const CartItem = ({item, price, quantity }) => (
    
-    <div>
-    <h4>{item}</h4>
+    <div className="CartItem">
+    <h4 className="CartItem-title">{item}</h4>
     <ul>
-      <li>Price: ${price}</li>
+      <li style={{ color: 'magenta', backgroundColor: 'yellow' }}>Price: ${price}</li>
       <li>Quantity: {quantity}</li>
       <li>Subtotal: ${price * quantity} </li>
     </ul>

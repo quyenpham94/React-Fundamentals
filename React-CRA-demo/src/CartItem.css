@@ -1,0 +1,7 @@
+.CardItem{
+    border-bottom: 2px solid black;
+}
+
+.CardItem-title {
+    margin-left: 20px;
+}
