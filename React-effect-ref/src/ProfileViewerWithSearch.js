@@ -12,11 +12,13 @@ const ProfileViewerWithSearch = () => {
     };
 
     useEffect(() => {
+        console.log(" LOADING DATA ")
         async function loadProfile(){
             const res = await axios.get(url);
             setProfile(res.data)
         }
         loadProfile();
+        return () => console.log("CLEANING UP!") // this run before effect run
     }, [url]);
 
     return (
