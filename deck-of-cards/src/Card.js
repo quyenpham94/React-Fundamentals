@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./Card.css";
 
 const Card = ({name, image}) => {
     const [{angle, xPosition, yPosition}] = useState({
