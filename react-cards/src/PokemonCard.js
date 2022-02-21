@@ -2,7 +2,7 @@ import React from "react";
 import useFlip from './hooks/useFlip';
 import "./PokemonCard.css";
 
-
+// renders a single pokemon card.
 const PokemonCard = ({ front, back, name, stats}) => {
     const [isFacingUp, flip] = useFlip();
     return (

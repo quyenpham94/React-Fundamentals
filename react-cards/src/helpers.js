@@ -1,9 +1,13 @@
 import { v4 as uuid } from "uuid";
 
+// select a random element from values array
 const choice = (values) => {
     const randIdx = Math.floor(Math.random() * values.length);
     return values[randIdx];
 }
+
+// Format response data from the Deck of Cards API,
+// extracting just the image url
 
 const formatCard = (data) => {
     return {
@@ -12,6 +16,9 @@ const formatCard = (data) => {
     };
 }
 
+// Format response data from the Pokemon API,
+// extracting the front image, back image, 
+// and array of relevant stat information.
 const formatPokemon = (data) => {
     return {
         id: uuid(),
@@ -24,6 +31,5 @@ const formatPokemon = (data) => {
         }))
     };
 }
-
 
 export { choice, formatCard, formatPokemon }

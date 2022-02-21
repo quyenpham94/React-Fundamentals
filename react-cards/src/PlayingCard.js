@@ -3,6 +3,7 @@ import useFlip from "./hooks/useFlip";
 import backOfCard from "./back.png";
 import './PlayingCard.css';
 
+// renders a single playing card.
 const PlayingCard = ({ front, back = backOfCard }) => {
     const [isFacingUp, flip] = useFlip();
     return (

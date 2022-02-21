@@ -3,6 +3,8 @@ import PlayingCardList from './PlayingCardList';
 import Pokedex from "./Pokedex";
 import './CardTable.css';
 
+// Main component. Renders card lists for playing cards and pokemon
+
 const CardTable = () => {
     return (
         <div className='CardTable'>

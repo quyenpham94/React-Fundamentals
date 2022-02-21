@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import pokemonList from "./pokemonList";
 import { choice, formatPokemon } from "./helpers";
 
+
+// select element to choose from common pokemon.
 const PokemonSelect = ({ add, pokemon = pokemonList }) => {
     const [pokeIdx, setPokeIdx] = useState(0);
     const handleChange = e => {

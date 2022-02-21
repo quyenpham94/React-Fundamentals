@@ -4,6 +4,10 @@ import PlayingCard from "./PlayingCard";
 import { formatCard } from './helpers';
 import './PlayingCardList.css';
 
+
+// renders a list of playing cards.
+// can also add a new card at random
+// or remove all cards.
 const PlayingCardList = () => {
     const [cards, addCard, clearCards] = useAxios(
         "cards",

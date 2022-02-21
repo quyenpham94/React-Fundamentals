@@ -4,6 +4,11 @@ import PokemonSelect from "./PokemonSelect";
 import PokemonCard from "./PokemonCard";
 import "./Pokedex.css";
 
+
+// renders a list of playing cards.
+// can also remove all cards,
+// and add a new card, either at random
+// or from a dropdown of available pokemon.
 const Pokedex = () => {
     const [pokemon, addPokemon, clearPokemon] = useAxios(
         "pokemon",
