@@ -1,5 +1,6 @@
 import React from 'react';
 import PlayingCardList from './PlayingCardList';
+import Pokedex from "./Pokedex";
 import './CardTable.css';
 
 const CardTable = () => {
@@ -10,6 +11,7 @@ const CardTable = () => {
             </header>
             <main>
                 <PlayingCardList />
+                <Pokedex />
             </main>
         </div>
     )
